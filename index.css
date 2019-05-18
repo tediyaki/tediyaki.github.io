@@ -148,6 +148,10 @@ header {
 
 /* Contact Me */
 
+#contactMe {
+	padding-top: 25px;
+}
+
 #contactMe .contact-form{
 	width: 42%;
 	margin: 0 auto;
