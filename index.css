@@ -164,9 +164,10 @@ header {
 
 .boxInput {
 	width: 40vw;
-	margin: 0;
+	margin-top: 10px;
 	box-sizing: border-box;
 	margin-bottom: 20px;
+	padding: 7px;
 }
 
 textarea {
