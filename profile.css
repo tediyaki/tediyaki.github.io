@@ -1,0 +1,204 @@
+/* Fonts */
+@font-face {
+  font-family: 'Special Elite';
+  font-style: normal;
+  font-weight: 400;
+  src: local('Special Elite Regular'), local('SpecialElite-Regular'), url(https://fonts.gstatic.com/s/specialelite/v9/XLYgIZbkc4JPUL5CVArUVL0ntnAOSA.woff2) format('woff2');
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+}
+
+@font-face {
+  font-family: 'Holtwood One SC';
+  font-style: normal;
+  font-weight: 400;
+  src: local('Holtwood One SC'), local('HoltwoodOneSC'), url(https://fonts.gstatic.com/s/holtwoodonesc/v9/yYLx0hLR0P-3vMFSk1TCq3Txg5BHdrz7.woff2) format('woff2');
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+}
+
+* {
+	padding: 0;
+	margin: 0;
+}
+
+body, #contactMe {
+	background-color: #ffd9b3;
+}
+
+h1 {
+	font-size: 5.8vh;
+}
+
+h2 {
+	font-size: 4.1vh;
+}
+
+h3 {
+	font-size: 2.5vh;
+}
+
+p {
+	font-size: 2vmin;
+	text-align: justify;
+}
+
+/* Header NavBar */
+
+header {
+	position: relative;
+}
+
+.myNav {
+	width: 100%;
+	height: 60px;
+	align-items: center;
+	position: absolute;
+	display: flex;
+	background-color: rgba(128, 64, 12, 0.4);
+	opacity: 0.93;
+	z-index: 5;
+}
+
+.myNav .navi{
+	display: inline;
+	position: relative;
+	text-decoration: none;
+	padding: 2vw 3vw 2vw;
+	font-weight: bold;
+	margin-left: 5vw;
+}
+
+.myNav a {
+	text-decoration: none;
+	z-index: 2;
+	font-family: 'Holtwood One SC';
+	color: #331a00;
+}
+
+.myNav a:hover {
+	color: #ffbf80;
+}
+
+.myNav ul {
+	margin: 0 auto;
+	z-index: 2;
+}
+
+
+
+/* Profile*/
+
+.myPhoto, .myProfile {
+	position: absolute;
+}
+
+.myPhoto, .myPhoto img {
+	width: 100%;
+	z-index: 1;
+}
+
+.myProfile{
+	position: relative;
+	font-family: "Special Elite";
+	width: 50%;
+	top: 7vw;
+	left: 16vw;
+	z-index: 2;
+}
+
+.myProfile h2 {
+	padding-top: 5px;
+}
+
+.myBody {
+	position: relative;
+	top: 12vw;
+	z-index: 3;
+}
+
+.myBody h2 {
+	padding-top: 20px;
+	font-family: 'Holtwood One SC';
+	color: #4d261a;
+}
+
+/* Interests */
+
+#myInterest {
+	background-image: linear-gradient(#ffd9b3, white, white, #ffd9b3);
+}
+
+#myInterest .interest-row, #myInterest h2, #contactMe h2 {
+	text-align: center;
+}
+
+#myInterest .interest  h3{
+	padding-top: 25px;
+}
+
+#myInterest .interest  img {
+	width: 80%;
+}
+
+#myInterest .interest-row .interest {
+	display: inline-block;
+	vertical-align: top;
+	margin-top: 40px;
+	padding: 20px 40px;
+}
+
+/* Contact Me */
+
+#contactMe .contact-form{
+	width: 42%;
+	margin: 0 auto;
+	padding-left: 20px;
+}
+
+#contactMe form label {
+	font-weight: bold;
+}
+
+.boxInput {
+	width: 40vw;
+	margin: 0;
+	box-sizing: border-box;
+	margin-bottom: 20px;
+}
+
+textarea {
+	vertical-align: top;
+}
+
+#submit-button {
+	width: 15vw;
+	margin-left: 12vw;
+	cursor: pointer;
+	padding: 15px 30px;
+	text-align: center;
+	font-weight: bold;
+	background-color: #ffb366;
+	color: #663312;
+	border: 2px solid #663312;
+	border-radius: 20%;
+}
+
+#submit-button:hover {
+	color: #ffb366;
+	background-color: #663312;
+}
+
+#footer {
+	height: 45px;
+	width: 100%;
+	background-color: #804000;
+	position: relative;
+	bottom: 0;
+	clear: both;
+	margin-top: 30px;
+	padding: 15px 0 10px
+}
+
+#footer .credit p, #footer .credit h3{
+	text-align: center;
+	font-family: 'Holtwood One SC';
+}
