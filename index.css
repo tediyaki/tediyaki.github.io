@@ -51,11 +51,19 @@ header {
 	width: 100%;
 	height: 60px;
 	align-items: center;
-	position: absolute;
+	position: fixed;
 	display: flex;
-	background-color: rgba(128, 64, 12, 0.4);
+	background-color: rgba(128, 64, 12, 0);
 	opacity: 0.93;
 	z-index: 5;
+}
+
+.myNav:hover {
+	background-color: rgba(128, 64, 12, 0.6);
+}
+
+.myNav:hover > ul .navi{
+	color: rgb(51, 26, 0);
 }
 
 .myNav .navi{
@@ -71,10 +79,10 @@ header {
 	text-decoration: none;
 	z-index: 2;
 	font-family: 'Holtwood One SC';
-	color: #331a00;
+	color: rgba(0, 0, 0, 0);
 }
 
-.myNav a:hover {
+.myNav a:hover > .navi {
 	color: #ffbf80;
 }
 
@@ -82,8 +90,6 @@ header {
 	margin: 0 auto;
 	z-index: 2;
 }
-
-
 
 /* Profile*/
 
