@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width">
+    <title>Treasure Hunt, a Monty Hall clone</title>
+    <link href="index.css" rel="stylesheet" type="text/css" />
+    <link href="treasure.css" rel="stylesheet" type="text/css" />
+  </head>
+  <body>
+    <header>
+      <nav class="myNav">
+        <ul>
+          <a href="index.html#"><li class="navi">Profile</li></a>
+          <a href="index.html#myInterest"><li class="navi">Interest</li></a>
+          <a href="index.html#contactMe"><li class="navi">Contact</li></a>
+        </ul>
+      </nav>
+    </header>
+    <div class="wrapper">
+      <div class="nonfooter">
+        <div id="box-form">
+          <form id="number-of-boxes" action="#">
+            <label for="kotak">Insert number of treasure box: (3 - 10)</label><br>
+            <input type="number" id="kotak">
+            <input id="submit-box" type="submit" value="Let's Go!" onclick="makeBox()">
+          </form>
+        </div>
+        <div id="treasure-boxes">
+        </div>
+        <div id="rules">
+          <h3 class="to-hide">How to Play:</h3>
+          <button id="hide-rules" onclick="hideButton()">Hide</button>
+          <div id="how-to-play">            
+            <ol class="to-hide">
+              <li>Isi jumlah kotak yang diinginkan</li>
+              <li>Pilih kotak yang mungkin ada hadiahnya</li>
+              <li>Jika kotak yang terpilih adalah kosong, semua kotak akan dibuka kecuali kotak hadiah dan kotak terpilih</li>
+              <li>Jika kotak yang terpilih adalah kotak hadiah,semua kotak akan dibuka kecuali kotak terpilih dan 1 kotak kosong secara acak</li>
+              <li>Kotak yang anda pilih akan ditandai dengan warna merah</li>
+              <li>Anda diberi kesempatan untuk menukar kotak yang sudah dipilih</li>
+              <li>Jika ingin mengulang, cukup ulangi langkah pertama</li>
+              <li>Selamat Mencoba</li>
+            </ol>
+          </div>      
+        </div>
+      </div>
+      <footer id="footer">
+          <div class="credit">
+            <h3>Made by: Teddy</h3>
+            <p>&copy; 2019</p>
+          </div>
+      </footer>
+    </div>
+    <script src="script.js"></script>
+  </body>
+</html>
