@@ -25,7 +25,7 @@ body, #contactMe {
 }
 
 h1 {
-	font-size: 5.8vh;
+	font-size: 5.3vh;
 }
 
 h2 {
@@ -33,7 +33,7 @@ h2 {
 }
 
 h3 {
-	font-size: 2.5vh;
+	font-size: 3.2vh;
 }
 
 p {
@@ -99,6 +99,7 @@ header {
 
 .myPhoto, .myPhoto img {
 	width: 100%;
+	height: 125%;
 	z-index: 1;
 }
 
@@ -113,6 +114,10 @@ header {
 
 .myProfile h2 {
 	padding-top: 5px;
+}
+
+#to-project {
+	margin: 30px auto;
 }
 
 .myBody {
@@ -180,7 +185,7 @@ textarea {
 	vertical-align: top;
 }
 
-#submit-button {
+#treasure-hunt, #submit-button {
 	width: 15vw;
 	margin-left: 12vw;
 	cursor: pointer;
@@ -193,7 +198,13 @@ textarea {
 	border-radius: 20%;
 }
 
-#submit-button:hover {
+#treasure-hunt {
+	margin-left: 42vw;
+	margin-top: 20px;
+	margin-bottom: 15px;
+}
+
+#treasure-hunt:hover, #submit-button:hover {
 	color: #ffb366;
 	background-color: #663312;
 }
