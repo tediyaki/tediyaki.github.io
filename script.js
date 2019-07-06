@@ -62,11 +62,13 @@ function kotakPilihan(pilihan, jackpot) {
       if(i !== pilihan && i !== jackpot) {
         harta[i].style.color = "transparent"
         harta[i].style.background = 'url("images/kosong.png")'
+		harta[i].style.cursor = "default"
       }
     } else {
         if(i !== anotherRandomBox && i !== jackpot) {
           harta[i].style.color = "transparent"
           harta[i].style.background = 'url("images/kosong.png")'
+		  harta[i].style.cursor = "default"
         }
     }
     harta[i].disabled = true
@@ -125,12 +127,13 @@ function wannaSwap(pilihan, jackpot, randNum, tukar) {
     if(tukar) {
       kotak[randNum].style.border = "5px solid rgb(195, 0, 0)"
       kotak[pilihan].style.border = "5px solid rgb(27, 8, 8)"
-      swapBox[0].innerHTML = "Selamat anda tidak mendapat apa-apa"
+      swapBox[0].innerHTML = "Selamat Anda Tidak Mendapat Apa-apa"
     } else {
-      swapBox[0].innerHTML = "Selamat anda mendapat hadiah"
+      swapBox[0].innerHTML = "Selamat Anda Mendapatkan Harta Karun"
     }
     kotak[randNum].style.background = "url('images/kosong.png')"
     kotak[randNum].style.color = "transparent"
+	kotak[randNum].style.cursor = "default"
   } else {
     if(tukar) {
       kotak[jackpot].style.border = "5px solid rgb(195, 0, 0)"
@@ -141,7 +144,9 @@ function wannaSwap(pilihan, jackpot, randNum, tukar) {
     }
     kotak[pilihan].style.background = "url('images/kosong.png')"
     kotak[pilihan].style.color = "transparent"
+	kotak[pilihan].style.cursor = "default"
   }
   kotak[jackpot].style.color = "transparent"
   kotak[jackpot].style.background = "url('images/treasure.png')"
+  kotak[jackpot].style.cursor = "default"
 }
